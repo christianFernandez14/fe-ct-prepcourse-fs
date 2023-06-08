@@ -14,7 +14,7 @@ function numberOfCharacters(string) {
     !mapeoLetra[letra] ? (mapeoLetra[letra] = 1) : mapeoLetra[letra]++;
   }
 
-  return mapeoLetra;
+  return mapeoLetra; 
 }
 
 function capToFront(string) {
