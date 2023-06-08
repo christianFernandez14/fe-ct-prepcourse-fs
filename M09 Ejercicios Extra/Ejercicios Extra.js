@@ -14,7 +14,7 @@ function numberOfCharacters(string) {
     !mapeoLetra[letra] ? (mapeoLetra[letra] = 1) : mapeoLetra[letra]++;
   }
 
-  return mapeoLetra; 
+  return mapeoLetra;
 }
 
 function capToFront(string) {
@@ -49,14 +49,9 @@ function capicua(numero) {
 
 function deleteAbc(string) {
   const procesado = string.split("");
-  console.log(procesado);
 
   for (let letra in procesado) {
-    if (
-      procesado[letra] === "a" ||
-      procesado[letra] === "b" ||
-      procesado[letra] === "c"
-    ) {
+    if (/[aeiou]/i.test(procesado[letra])) {
       delete procesado[letra];
     }
   }
